@@ -1,0 +1,53 @@
+.control {
+  margin-top: 30px;
+}
+
+.progress {
+  width: 80%;
+  margin: 0 auto;
+
+  input {
+    width: 100%;
+    border: none;
+    outline: none;
+    accent-color: #8E78FF;
+  }
+}
+
+.control-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: 30px auto 0;
+
+  .icon-repeat,
+  .icon-prev,
+  .icon-next,
+  .icon-random {
+    font-size: 3.5rem;
+    color: #fff;
+    transition: all 0.1s linear;
+    cursor: pointer;
+
+    &:hover {
+      color: #cb22ab;
+    }
+  }
+
+  .icon-play {
+    width: 50px;
+    font-size: 5.5rem;
+    color: #fff;
+    cursor: pointer;
+    color: #cb22ab;
+  }
+}
+
+.icon-random.active {
+  color: #cb22ab;
+}
+
+.icon-repeat.active {
+  color: #cb22ab;
+}

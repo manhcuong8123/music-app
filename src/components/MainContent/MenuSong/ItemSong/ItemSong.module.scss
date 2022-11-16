@@ -1,0 +1,62 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px 15px;
+  background-color: #1E1F34;
+  border-radius: 10px;
+  transition: all 0.1s linear;
+
+  &:hover {
+    background-color: #2F3255;
+    cursor: pointer;
+  }
+}
+
+.wrapper.active {
+  background-color: #cb22ab;
+}
+
+.wrapper+.wrapper {
+  margin-top: 10px;
+}
+
+.image-author {
+  width: 50px;
+  height: 50px;
+
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+  }
+}
+
+.info {
+  flex: 1;
+  margin-left: 15px;
+
+  .name-song {
+    width: 160px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 1.7rem;
+    color: #fff;
+    margin-bottom: 5px;
+  }
+
+  .name-author {
+    color: #fff;
+    font-size: 1.3rem;
+  }
+}
+
+.icon-song {
+  font-size: 3rem;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}

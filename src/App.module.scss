@@ -1,0 +1,44 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Inter', sans-serif;
+}
+
+body {
+  font-size: 1.6rem;
+  background-image: url(../public/images/background.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 691px;
+  height: 522px;
+  background-color: #191A2E;
+  border-radius: 3rem;
+  box-shadow: 0 0px 8px #aaa;
+  overflow: hidden;
+}
+
+// ScrollBar
+html *::-webkit-scrollbar {
+  border-radius: 0;
+  width: 0px;
+}
+
+html *::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #ededed;
+}

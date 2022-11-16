@@ -1,0 +1,24 @@
+.title {
+  margin: 15px 0;
+  display: flex;
+  align-items: center;
+
+  .title-icon {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  span {
+    display: block;
+    font-size: 1.8rem;
+    color: #fff;
+    margin-right: 10px;
+  }
+}
+
+.list-song {
+  height: 340px;
+  overflow-y: scroll;
+}

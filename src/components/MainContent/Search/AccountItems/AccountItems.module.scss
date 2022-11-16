@@ -1,0 +1,66 @@
+.account {
+  background-color: #1E1F34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.1s linear;
+
+  &:hover {
+    background-color: #2F3255;
+  }
+}
+
+.account+.account {
+  margin-top: 10px;
+}
+
+.icon-author {
+
+  img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 20px;
+  flex: 1;
+
+  h3 {
+    width: 140px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    color: #fff;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+  }
+
+  p {
+    font-size: 1.2rem;
+    color: #fff;
+  }
+}
+
+.icon-actions {
+  display: flex;
+  align-items: center;
+  color: #fff;
+  font-size: 1.6rem;
+
+  .heart {
+    margin-right: 10px;
+  }
+
+  .heart,
+  .follow {
+    cursor: pointer;
+  }
+}
